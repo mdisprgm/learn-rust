@@ -36,6 +36,21 @@ impl Person {
     }
 }
 
+#[derive(Debug)]
+struct Rectangle {
+    height: u32,
+    width: u32,
+}
+impl Rectangle {
+    // I hate explicit self parameter
+    fn area(&self) -> u32 {
+        self.height * self.width
+    }
+    fn associated_func() {
+        println!("maybe just a staic function");
+    }
+}
+
 pub fn run() {
     let c = Color {
         r: 0xfa,
@@ -56,4 +71,14 @@ pub fn run() {
     println!("Full Name: {}", p.full_name());
 
     println!("Person Tuple: {:?}", p.to_tuple());
+
+    let sq = Rectangle {
+        height: 100,
+        width: 30,
+    };
+    println!("{} {}", sq.height, sq.width);
+    println!("{}", sq.area());
+    println!("{:?}", sq);
+    println!("{:#?}", sq);
+    Rectangle::associated_func();
 }
