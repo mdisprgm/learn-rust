@@ -1,4 +1,6 @@
 mod print;
+mod types;
+mod vars;
 
 fn main() {
     print::run();
@@ -9,4 +11,6 @@ fn main() {
     );
 
     println!("{:?}", (12, true, "Hello"));
+    vars::run();
+    types::run();
 }
