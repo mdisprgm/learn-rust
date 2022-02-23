@@ -9,9 +9,8 @@ pub fn run() {
     let len = calculate_length(&mut s);
     println!("The length of \"{}\" is {}", s, len);
 
-    let mut s = String::from("Hello World");
+    let s = String::from("Hello World");
     let word = first_word(&s[..]);
-    let my_string_literal = "hello world";
 
     println!("the first word is:{}", word);
 }
