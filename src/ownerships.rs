@@ -1,6 +1,5 @@
 pub fn run() {
     let mut s = String::from("Hello");
-
     takes_ownership(s.clone());
 
     let x = 5;
@@ -9,6 +8,12 @@ pub fn run() {
 
     let len = calculate_length(&mut s);
     println!("The length of \"{}\" is {}", s, len);
+
+    let mut s = String::from("Hello World");
+    let word = first_word(&s[..]);
+    let my_string_literal = "hello world";
+
+    println!("the first word is:{}", word);
 }
 
 fn takes_ownership(some_string: String) {
@@ -21,6 +26,19 @@ fn makes_copy(some_integer: i32) {
 
 fn calculate_length(s: &mut String) -> usize {
     s.len()
+}
+
+fn first_word(s: &str) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' '
+        /*as  byte*/
+        {
+            return &s[0..i];
+        }
+    }
+    &s[..]
 }
 
 /*
