@@ -1,9 +1,10 @@
-mod print;
-mod types;
-mod vars;
+// mod print;
+// mod types;
+// mod vars;
+mod strings;
 
 fn main() {
-    print::run();
+    // print::run();
 
     println!(
         "Binary: {:b} Hex:{:x} Octal: {:o}",
@@ -11,6 +12,8 @@ fn main() {
     );
 
     println!("{:?}", (12, true, "Hello"));
-    vars::run();
-    types::run();
+    // vars::run();
+    // types::run();
+
+    strings::run();
 }
