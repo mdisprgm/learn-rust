@@ -20,16 +20,16 @@ fn move_avatar(m: Movement) {
     // Perform action depending
     match m {
         Movement::Up => {
-            println!("Avatar movin Up")
+            println!("Avatar moving Up")
         }
         Movement::Down => {
-            println!("Avatar movin Down")
+            println!("Avatar moving Down")
         }
         Movement::Left => {
-            println!("Avatar movin Left")
+            println!("Avatar moving Left")
         }
         Movement::Right => {
-            println!("Avatar movin Right")
+            println!("Avatar moving Right")
         }
     }
 }
