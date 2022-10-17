@@ -1,19 +1,20 @@
 extern crate communicator;
 
+// mod arrays;
+// mod cli;
+// mod conditionals;
+mod enums;
+// mod functions;
+// mod loops;
+// mod ownerships;
+// mod pointer_ref;
 // mod print;
+// mod strings;
+// mod structs;
+// mod tuples;
 // mod types;
 // mod vars;
-// mod strings;
-// mod tuples;
-// mod arrays;
 // mod vectors;
-// mod conditionals;
-// mod loops;
-// mod functions;
-// mod pointer_ref;
-// mod structs;
-mod enums;
-// mod ownerships;
 
 fn main() {
     // print::run();

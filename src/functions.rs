@@ -3,7 +3,7 @@
 pub fn run() {
     greeting("Hello", "Jane");
 
-    // Bind functoin values to variables
+    // Bind function values to variables
     let get_sum = add(5, 6);
     println!("Sum: {}", get_sum);
 

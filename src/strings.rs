@@ -15,7 +15,7 @@ pub fn run() {
     // Capacity in bytes
     println!("Capacity: {}", hello.capacity());
 
-    // Check if emtpy
+    // Check if empty
     println!("Is Empty: {}", hello.is_empty());
 
     // Contains

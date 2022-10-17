@@ -1,4 +1,4 @@
-// Structs - Used to create customd data types
+// Structs - Used to create custom data types
 
 // Traditional Struct
 struct Color {
@@ -47,7 +47,7 @@ impl Rectangle {
         self.height * self.width
     }
     fn associated_func() {
-        println!("maybe just a staic function");
+        println!("maybe just a static function");
     }
 }
 
